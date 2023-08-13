@@ -1,0 +1,24 @@
+# dependencies
+blog/node_modules
+blog/.pnp
+blog/.pnp.js
+
+# testing
+blog/coverage
+
+# production
+blog/build
+
+# misc
+blog/.DS_Store
+blog/.env.local
+blog/.env.development.local
+blog/.env.test.local
+blog/.env.production.local
+
+blog/npm-debug.log*
+blog/yarn-debug.log*
+blog/yarn-error.log*
+
+backend/node_modules
+node_modules

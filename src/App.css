@@ -1,0 +1,190 @@
+/* styling navbar and its contents */
+.navbar{
+    background-color:darkslategrey;
+    padding: 30px 0;
+    margin: 0 0 50px 0;
+}
+
+.navbar-heading{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin: 0;
+}
+
+/* Styling for the form */
+.post-form {
+    padding: 10px;
+    /* background-color:#B2BEB5; */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 50px;
+  
+  }
+  
+  .form-input {
+    width: 96%; 
+    height: 40px; 
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 30px;
+   
+  }
+  
+  .form-textarea {
+    width: 96%;
+    height: 120px; 
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+   
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+   height: 120px;
+  }
+  
+  .form-button {
+    background-color: darkslategrey;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   
+  }
+
+  /* Styling for the posts section */
+  .posts-section {
+    /* display: flex;
+    grid-template-columns: minmax(auto, 800px); 
+    padding: 10px; 
+    background-color: darkslategrey; 
+    margin-bottom: 20px; */
+    display: flex;
+   align-items: center; /* Vertically center the heading */
+   justify-content: center;
+   padding: 10px; /* Add padding for better spacing */
+   margin-bottom: 50px;
+   width: auto;   
+   font-size: 15px;
+   
+  }
+  
+  .posts-heading {
+    /* text-align: left;    
+    font-size: 20px;
+    color: white;
+    margin: 0; */
+    font-size: 20px;
+    color: white;
+    background-color: darkslategrey; /* Set background color on the heading */
+    padding: 10px 200px; /* Add padding for the background */
+    border-radius: 5px; /* Add border radius for a rounded background */
+    margin: 0;
+  }
+  
+  .post-list {
+    list-style: none;
+    padding: 10px;  
+    display: flex;  
+    flex-wrap: wrap;
+    gap: 20px;
+    /* overflow-wrap: break-word;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; */
+  }
+  
+  .post-item {
+    flex: 1 1 calc(50% - 20px);
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color:white;
+    padding: 10px;
+    height: 300px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+
+  @media screen and (max-width: 600px) {
+    /* Adjust the breakpoint value (600px) as needed */
+    .post-item {
+        flex: 1 1 calc(100% - 20px);
+    }
+  }
+  
+  .post-title {
+    margin: 10px;
+    text-align: center;
+    font-size: 24px; /* Increase font size */
+    color: darkslategrey; /* Change text color */
+    font-weight: bold; /* Add bold font weight */
+    text-transform: uppercase; /* Uppercase text */
+  }
+  
+  .post-content {
+    margin: 10px 0;
+    padding: 5px 10px 0 5px;
+    max-height: 200px; /* Set a max height for scrolling */
+    overflow-y:auto; 
+    overflow-x:hidden; 
+    background-color :#f5f5f5;
+    color: black;
+    text-align: justify;
+    
+  }
+  
+  .post-buttons {
+    /* display: flex;
+    justify-content:flex-end;
+    align-items: center; */
+    position: absolute; /* Set position to absolute */
+    bottom: 10px; /* Distance from the bottom */
+    right: 10px; /* Distance from the right */
+  }
+  
+  .post-buttons button {
+    background-color: darkslategrey; /* Button color */
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* Add margin between buttons */
+  }
+  
+  .post-buttons button:last-child {
+    margin-right: 0; /* Remove margin for the last button */
+  }
+
+  /* delete popup */
+  .delete-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .delete-popup p {
+    margin-bottom: 10px;
+  }
+  
+  .delete-popup button {
+    margin-right: 10px;
+  }
+  
+  
