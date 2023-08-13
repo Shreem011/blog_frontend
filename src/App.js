@@ -3,7 +3,7 @@ import axios from "axios";
 import DeleteConfirmationPopup from "./DeleteConfirmationPopup";
 import "./App.css";
 
-const BASE_API_URL = "http://localhost:5000/api/posts";
+const BASE_API_URL = "https://blog-backend-bgl.vercel.app/api/posts";
 
 const App = () => {
   const [posts, setPosts] = useState([]);
